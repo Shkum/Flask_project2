@@ -14,5 +14,6 @@ def index():
     res.headers['Server'] = 'flasksite'
     return res
 
+
 if __name__ == "__main__":
     app.run(Debug=True)
