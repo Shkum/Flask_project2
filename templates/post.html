@@ -2,5 +2,6 @@
 
 {% block content %}
 {{ super() }}
-{{ post }}
+{#    safe - declaring that page is safe and tags inside of page can be used, otherwise page with tegs will be shown as ussual text#}
+{{ post | safe }}
 {% endblock %}
